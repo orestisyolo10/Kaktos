@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orestis | Kaktos - Music Album Reactions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header h2 {
+            margin: 0;
+            font-weight: normal;
+            color: #bbbbbb;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+        }
+        .bio, .contact, .request {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .request form input, .request form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        .request form button {
+            background-color: #ff6600;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Orestis aka Kaktos</h1>
+    <h2>Music Album Reactions on YouTube</h2>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+    <a href="#request">Request an Album</a>
+</nav>
+
+<section id="about" class="bio">
+    <h2>About Me</h2>
+    <p>Hi! I'm Orestis, also known as Kaktos. I have a passion for metal music and I love sharing my thoughts and reactions to different music albums on my YouTube channel. I also play the electric guitar, which adds another layer to my understanding and appreciation of the music I review. Join me on my journey through the diverse world of metal music!</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions or just want to reach out, feel free to email me at <a href="mailto:orestisyolo2008@gmail.com">orestisyolo2008@gmail.com</a>.</p>
+</section>
+
+<section id="request" class="request">
+    <h2>Request a Metal Album</h2>
+    <p>If you have a metal album you'd like me to react to and rate, please fill out the form below:</p>
+    <form action="https://formspree.io/f/mayrzbnp" method="POST">
+        <label for="album-name">Album Name:</label>
+        <input type="text" id="album-name" name="album-name" required>
+
+        <label for="artist-name">Artist Name:</label>
+        <input type="text" id="artist-name" name="artist-name" required>
+
+        <label for="message">Why do you recommend this album? *optional*</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+</body>
+</html>
+
